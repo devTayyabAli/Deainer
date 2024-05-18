@@ -1,0 +1,127 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/hk4GbGCaNTBZGRD9CRC-t/_buildManifest.js",
+    "static/hk4GbGCaNTBZGRD9CRC-t/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/8764-6825f04985bb7b7c.js",
+      "static/chunks/7121-fce2c3995f4353e5.js",
+      "static/chunks/8418-bdbe3e435f0334ab.js",
+      "static/chunks/pages/index-14c9fa97ca282096.js"
+    ],
+    "/FAQ": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/FAQ-0c708251f837d204.js"
+    ],
+    "/Home": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/Home-53ff6b4293e3d6f6.js"
+    ],
+    "/NFT/[NFT]": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/NFT/[NFT]-78c9d16dfdc24c15.js"
+    ],
+    "/NotFound": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/NotFound-44267ca5d0342f12.js"
+    ],
+    "/Privacy": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/Privacy-5d7d768609dcdd2b.js"
+    ],
+    "/Terms": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/Terms-6fb716b1c5c13eea.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/css/95f494a468f4a64c.css",
+      "static/chunks/pages/_app-0649f1cec9445c36.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/_error-e4216aab802f5810.js"
+    ],
+    "/components/Common/ConnectBTN": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/components/Common/ConnectBTN-810d00350dc66f81.js"
+    ],
+    "/components/Common/GradientButton": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/components/Common/GradientButton-382a21d3a65b8b2f.js"
+    ],
+    "/components/Common/LinkButton": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/components/Common/LinkButton-eba3e56234559c49.js"
+    ],
+    "/components/Common/NFTCard": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/components/Common/NFTCard-e982da98c59faca9.js"
+    ],
+    "/components/Footer": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/components/Footer-892fc07fb964060c.js"
+    ],
+    "/components/Header": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/components/Header-9d69ce271a33c793.js"
+    ],
+    "/components/Layout": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/components/Layout-5290842fd8a8a55e.js"
+    ],
+    "/components/connectButton": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/components/connectButton-8f7f211c52ddd7e9.js"
+    ],
+    "/site": [
+      "static/chunks/webpack-3b127e9dd983847a.js",
+      "static/chunks/framework-fee8a7e75612eda8.js",
+      "static/chunks/main-5124ff2d19b1c429.js",
+      "static/chunks/pages/site-47278c8b2a8aa400.js"
+    ]
+  },
+  "ampFirstPages": []
+}

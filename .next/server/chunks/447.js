@@ -1,0 +1,1 @@
+"use strict";exports.id=447,exports.ids=[447],exports.modules={3447:(e,t,s)=>{s.d(t,{MC:()=>d,T3:()=>c,oT:()=>o});let d={56:"https://bsc-dataseed1.binance.org/",1:"https://ethereum.publicnode.com"},o="0xcAC5251f45D5437225F430D3d36a958610b302c1",c="1858102375375"}};

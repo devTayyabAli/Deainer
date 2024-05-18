@@ -1,0 +1,90 @@
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { ReactNode } from "react";
+import React from 'react';
+
+interface CustomBtnProps {
+  children: ReactNode;
+}
+
+const CustomBtn: React.FC<CustomBtnProps> = ({ children }) => {
+  return (
+    <ConnectButton.Custom>
+      {({
+        account,
+        chain,
+        openAccountModal,
+        openChainModal,
+        openConnectModal,
+        authenticationStatus,
+        mounted,
+      }) => {
+        const ready = mounted && authenticationStatus !== "loading";
+        const connected =
+          ready &&
+          account &&
+          chain &&
+          (!authenticationStatus || authenticationStatus === "authenticated");
+        return (
+          <div
+            {...(!ready && {
+              "aria-hidden": true,
+              style: {
+                opacity: 0,
+                pointerEvents: "none",
+                userSelect: "none",
+              },
+            })}
+            className="claim-container"
+          >
+            {(() => {
+              if (!connected) {
+                return (
+                  <button
+                    className="coonect_Wallate_btn d-flex"
+                    onClick={openConnectModal}
+                    type="button"
+                  >
+                    {children}
+                  </button>
+                );
+              }
+
+              if (chain.unsupported) {
+                return (
+                  <button onClick={openChainModal} type="button">
+                    Wrong network
+                  </button>
+                );
+              }
+              if (account) {
+                return (
+                  <div style={{ display: "flex", gap: 12 }}>
+                    <button
+                      onClick={openAccountModal}
+                      type="button"
+                      className="coonect_Wallate_btn d-flex"
+                    >
+                      {account.displayName}
+                    </button>
+                  </div>
+                );
+              } else {
+                return (
+                  <button
+                    className="coonect_Wallate_btn d-none d-lg-flex"
+                    onClick={openConnectModal}
+                    type="button"
+                  >
+                    {children}
+                  </button>
+                );
+              }
+            })()}
+          </div>
+        );
+      }}
+    </ConnectButton.Custom>
+  );
+};
+
+export default CustomBtn;
